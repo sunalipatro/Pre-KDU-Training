@@ -10,3 +10,46 @@ Make sure the “-” button has an id of decrement
 
 The IDs should match or else the tests will fail.
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .counter-container {
+      text-align: center;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    #counter-value {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="counter-container">
+    <button id="decrement">-</button>
+    <div class="counter-value">0</div>
+    <button id="increment">+</button>
+  </div>
+</body>
+</html>

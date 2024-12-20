@@ -1,37 +1,53 @@
 <!-- 
-  Create a webpage with a simple calculator
-  Create two fields to take input of two numbers
-  Create 4 buttons to perform 4 operations - Add, Subtract, Divide, Multiply
-  Alert the result based on the button that was clicked.
+Create an HTML page with a simple counter
+Create a simple up-down counter
+Add two buttons “+”, and “-”
+Based on the button clicked, update the value displayed.
 
-  Make sure the input fields have an id of num1 and num2
-  Make sure the “Add” button has an id of add
-  Make sure the “Subtract” button has an id of subtract
-  Make sure the “Multiply” button has an id of multiply
-  Make sure the “Divide” button has an id of divide
+Make sure the <div> that renderts the counter value has an id of counter-value
+Make sure the “+” button has an id of increment
+Make sure the “-” button has an id of decrement
 
-  The IDs should match or else the tests will fail.
- -->
+The IDs should match or else the tests will fail.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="/index.f1c22d47.css">
+  <title>Counter</title>
+  <style>body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.counter-container {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+#counter-value {
+  margin: 20px 0;
+  font-size: 36px;
+}
+</style>
 </head>
+
 <body>
-  <div class="calculator">
-    <h1>Calculator</h1>
-    <input type="number" id="num1" placeholder="Enter first number">
-    <input type="number" id="num2" placeholder="Enter second number">
-    <div class="buttons">
-      <button id="add">Add</button>
-      <button id="subtract">Subtract</button>
-      <button id="multiply">Multiply</button>
-      <button id="divide">Divide</button>
-    </div>
+  <div class="counter-container">
+    <button id="decrement">-</button>
+    <div class="counter-value">0</div>
+    <button id="increment">+</button>
   </div>
-  <script src="/index.7cfde5cc.js"></script>
-<script src="/calculator.caad6af6.js"></script></body>
+<script src="/counter.eb336050.js"></script></body>
 </html>
