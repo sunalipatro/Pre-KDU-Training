@@ -1,14 +1,37 @@
 <!-- 
-Create a webpage with a simple calculator
-Create two fields to take input of two numbers
-Create 4 buttons to perform 4 operations - Add, Subtract, Divide, Multiply
-Alert the result based on the button that was clicked.
+  Create a webpage with a simple calculator
+  Create two fields to take input of two numbers
+  Create 4 buttons to perform 4 operations - Add, Subtract, Divide, Multiply
+  Alert the result based on the button that was clicked.
 
-Make sure the input fields have an id of num1 and num2
-Make sure the “Add” button has an id of add
-Make sure the “Subtract” button has an id of subtract
-Make sure the “Multiply” button has an id of multiply
-Make sure the “Divide” button has an id of divide
+  Make sure the input fields have an id of num1 and num2
+  Make sure the “Add” button has an id of add
+  Make sure the “Subtract” button has an id of subtract
+  Make sure the “Multiply” button has an id of multiply
+  Make sure the “Divide” button has an id of divide
 
-The IDs should match or else the tests will fail.
+  The IDs should match or else the tests will fail.
  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <div class="buttons">
+      <button id="add">Add</button>
+      <button id="subtract">Subtract</button>
+      <button id="multiply">Multiply</button>
+      <button id="divide">Divide</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
