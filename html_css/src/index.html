@@ -1,11 +1,224 @@
 <!-- 
-Use headings and paragraphs to divide different sections of the website.
-Use tables to explain your educational qualification.
-Add images for your projects and yourself
-Use HTML lists to talk about your skills 
-Use Links to Navigate to your LinkedIn or GitHub profiles.
+  Use headings and paragraphs to divide different sections of the website.
+  Use tables to explain your educational qualification.
+  Add images for your projects and yourself
+  Use HTML lists to talk about your skills 
+  Use Links to Navigate to your LinkedIn or GitHub profiles.
 
-Style the entire webpage according to your creativity
-Use all these ways of adding style to your webpage.
-Use CSS selectors when styling your lists and tables.
+  Style the entire webpage according to your creativity
+  Use all these ways of adding style to your webpage.
+  Use CSS selectors when styling your lists and tables.
 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #343a40;
+        color: white;
+        padding: 1.5em 0;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .aboutMe h2 {
+        text-align: center;
+      }
+      section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        color: #ce5fa1;
+        margin-bottom: 15px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      table th {
+        background-color: #ce5fa1;
+        color: white;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      ul {
+        list-style-type: circle;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .Project article {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .Project img {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        text-align: center;
+        background-color: #343a40;
+        color: white;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      footer p {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+    </header>
+    <main>
+      <section class="aboutMe">
+        <h2>
+          Hello! I am Sunali Patro, Software Developer Intern at Kickdrum
+          passionate about Web development and AI
+        </h2>
+      </section>
+      <section class="edu">
+        <h2>Educational Qualification</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institute</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bachelor's in Technology</td>
+              <td>KIIT</td>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <td>12th</td>
+              <td>Vyomayan Samstha Vidyalaya</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>10th</td>
+              <td>Vyomayan Samstha Vidyalaya</td>
+              <td>2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="Project">
+        <h2>Projects</h2>
+        <article>
+          <h3>Fake News Detection Application</h3>
+          <p>This appliaction is going to help detect the fake news.</p>
+          <img
+            src="p1.png"
+            alt="Project Image"
+            style="width: 300px; height: auto"
+          />
+        </article>
+        <article>
+          <h3>Business Chat Applicatiom</h3>
+          <p>
+            This appliaction includes finctionalities like PDF Chat and
+            Text-to-SQL Query Conversion.
+          </p>
+          <img
+            src="p2.png"
+            alt="Project Image"
+            style="width: 300px; height: auto"
+          />
+        </article>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>Machine Learning</li>
+          <li>Artificial Intelligence</li>
+          <li>App Development using Flutter</li>
+          <li>Java Programming</li>
+          <li>Python Programming</li>
+          <li>Spring Boot</li>
+          <li>React</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Connect with me :)</p>
+      <a href="https://www.linkedin.com/in/sunalipatro/" target="_blank" >LinkedIn</a>
+      <a href="https://github.com/sunalipatro" target="_blank">GitHub</a>
+    </footer>
+  </body>
+</html>
